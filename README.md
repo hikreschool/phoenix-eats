@@ -41,7 +41,9 @@ Download the starter project files as .zip and extract to your desktop or your f
 -Once finished, submit it through Git & Github by creating a Git branch of yours and pushing it to this repository.
 
 
-
+# App Demo
+ 
+ <img src="/app-challenge-5.gif"/>
 
 
 
