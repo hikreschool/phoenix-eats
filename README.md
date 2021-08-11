@@ -1,4 +1,3 @@
-# phoenix-eats
 
 # App Challenge Week 9 - Phoenix Eats
 **Deadline: Friday**
