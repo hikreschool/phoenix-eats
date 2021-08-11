@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="efr-ia-uTu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="efr-ia-uTu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,8 +19,8 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="200" id="1Gt-AJ-ntc" customClass="CategoryCell" customModule="GoodEatins" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="200" id="1Gt-AJ-ntc" customClass="CategoryCell" customModule="Phoenix_Eats" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Gt-AJ-ntc" id="64g-dR-1Mc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -44,8 +44,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryImg" destination="yOn-L1-5gK" id="oFz-3c-U9E"/>
-                                            <outlet property="categoryTitle" destination="wJg-Gm-249" id="yWV-zl-scJ"/>
+                                            <outlet property="categoryImg" destination="yOn-L1-5gK" id="c4q-PE-UgZ"/>
+                                            <outlet property="categoryTitle" destination="wJg-Gm-249" id="6mf-as-nLb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -62,7 +62,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="H-Resto Menu" largeTitleDisplayMode="always" id="R3p-VL-3td"/>
                     <connections>
-                        <outlet property="tableView" destination="Hb5-WN-sPt" id="hB3-2J-k8J"/>
+                        <outlet property="tableView" destination="Hb5-WN-sPt" id="090-a3-bav"/>
                         <segue destination="RNX-mF-c0T" kind="show" identifier="toRecipesSelection" id="sDf-b2-pvt"/>
                     </connections>
                 </viewController>
@@ -88,7 +88,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recipeCell" id="LNc-hk-Iqt" customClass="RecipeCell" customModule="GoodEatins" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recipeCell" id="LNc-hk-Iqt" customClass="RecipeCell" customModule="Phoenix_Eats" customModuleProvider="target">
                                         <rect key="frame" x="10" y="10" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -199,9 +199,9 @@
                     <navigationItem key="navigationItem" id="dep-JA-DbC"/>
                     <connections>
                         <outlet property="orderMeal" destination="QCQ-vr-Rdf" id="BMH-8g-8Qf"/>
-                        <outlet property="recipeImg" destination="qiD-PF-0EQ" id="TF0-47-g5M"/>
-                        <outlet property="recipeInstructions" destination="Mw0-Ir-Hae" id="hVg-1s-Y6b"/>
-                        <outlet property="recipeTitle" destination="M2c-T8-Z0D" id="M9x-sF-ErK"/>
+                        <outlet property="recipeImg" destination="qiD-PF-0EQ" id="gR0-Wo-tR3"/>
+                        <outlet property="recipeInstructions" destination="Mw0-Ir-Hae" id="vY7-RA-xFt"/>
+                        <outlet property="recipeTitle" destination="M2c-T8-Z0D" id="t7k-e4-2EC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cS9-pE-pXS" userLabel="First Responder" sceneMemberID="firstResponder"/>

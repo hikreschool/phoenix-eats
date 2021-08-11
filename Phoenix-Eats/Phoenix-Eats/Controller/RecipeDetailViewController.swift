@@ -21,7 +21,10 @@ class RecipeDetailViewController: UIViewController {
         
         // TODO: 11. Configure all the UI elements by passing in the properties to its respective UI element
         // Hint: 1 for recipeImage, one for recipeTitle, and one for recipeInstructions
-      
+        self.recipeImg.image = UIImage(named: selectedRecipe.imageName)
+        self.recipeTitle.text = selectedRecipe.title
+        self.recipeInstructions.text = selectedRecipe.instructions
+        
         orderMeal.layer.cornerRadius = orderMeal.frame.size.height / 2
     }
     
