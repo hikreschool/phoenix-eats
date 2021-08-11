@@ -40,10 +40,6 @@ Download the starter project files as .zip and extract to your desktop or your f
 # Submission
 -Once finished, submit it through Git & Github by creating a Git branch of yours and pushing it to this repository.
 
-# App Demo
- 
- <img src="/demo-app-challenge-4.gif"/>
-
 
 
 
