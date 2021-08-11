@@ -9,9 +9,10 @@ Download the starter project files as .zip and extract to your desktop or your f
 # What You Will Be Learning
 
 1. Using Multiple View Controllers
-2. UICollectionViews
-3. CustomCells
-4. Data Models
+2. UITableViews
+3. UICollectionViews
+4. CustomCells
+5. Data Models
 
 # Important keywords
 1. **IndexPath** - Index paths describe an item’s position inside a table view or collection view, storing both its section and its position inside that section. For example, the first row in a table would have section 0, row 0, whereas the eighth row in the fourth section would have section 3, row 7. You’ll be given index paths fairly frequently by iOS, for example when the user tapped on a row, or when UIKit needs to know whether a certain item can be edited.
