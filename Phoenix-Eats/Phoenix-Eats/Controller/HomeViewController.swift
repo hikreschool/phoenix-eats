@@ -8,21 +8,27 @@
 import UIKit
 
 // TODO: 0. Conform these HomeViewController class to our UITableView protocols, UITableViewDelegate and UITableViewDataSource
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     // TODO: 1. Create an outlet called "tableView" and connect it to the Table View on Storyboard
-    
+
+    @IBOutlet var tableView: UITableView!
+
 
     // TODO: 2. Create an constant that is an instance of type FoodData and call it "foodData"
-    
+    let foodData = FoodData()
     
     // TODO: 3. Create a variable called "categoryToPass" and initialized to empty string
-    
+    var categoryToPass: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // TODO: 4. Conform to the table view delegate protocols by assigning tableView.delegate and tableView.dataSource to self
+
+        tableView.delegate = self
+        tableView.dataSource = self
+
     
     }
     
@@ -32,7 +38,7 @@ class HomeViewController: UIViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         // TODO: 5. return the number of categories in our foodData instance instead of 0
-        return 0
+        return foodData.categories.count
     }
     
     // This method configures what we display in every cell for row in our UITableView
@@ -40,13 +46,18 @@ class HomeViewController: UIViewController {
         
         
         // TODO: 6. Using optional binding (if-let), create a cell by using tableView.dequeueReusableCell method and typecasting the cell to CategoryCell
+
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as? CategoryCell {
+            cell.configureCell(category: foodData.categories[indexPath.row])
+
+            return cell
+        }
+        
      
             
             // TODO: 7. Inside the optional binding, call the configureCell method and in the parameters, assign every items in the categories found inside foodData instance
             
             // TODO: 8. Return the cell here
-            
-        
         return UITableViewCell()
     }
     
@@ -59,8 +70,11 @@ class HomeViewController: UIViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // TODO: 9. Pass in the title found in every item in categories inside our foodData instance and assign it to categoryToPass variable we declared above
+        categoryToPass = foodData.categories[indexPath.row].title
         
         // TODO: 10. Call performSegue method and pass in the identifier "toRecipesSelection" and "self" for the sender
+
+            self.performSegue(withIdentifier: "toRecipeSelection", sender: self)
         
     }
     
