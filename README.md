@@ -2,7 +2,7 @@
 # App Challenge Week 9 - Phoenix Eats
 **Deadline: Friday**
 
-Download the starter project files as .zip and extract to your desktop or your folder of preference.Or you can go your Terminal or Commandline and copy paste: git clone https://github.com/hikreschool/phoenix-eats
+Download the starter project files as .zip and extract to your desktop or your folder of preference.Or you can go your Terminal or Commandline and copy paste: git clone https://github.com/phoenix-eats
 
 **Important: Aside from the previous App Challenges, you will also be using what you've learned from hands-on activities**
 
